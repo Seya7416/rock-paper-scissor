@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>execise 5</title>
+</head>
+
+<body>
+  <button onclick="">coffee</button>
+  <button>bagels</button>
+  <button>soup</button>
+  <!--6f-6j-->
+  <button onclick=" 
+    let guess = Math.random();
+    let result = '';
+    if (guess <= 0.5) {
+      result = ' taile you win';
+    }
+    else { result = 'heads you lose' }
+    console.log(result);
+
+    alert(`you guess taile: the computer gusss: ${result}`)
+  
+  
+  ">taile</button>
+  <button onclick=" 
+    let guess = Math.random();
+    let result = '';
+    if (guess <= 0.5) {
+      result = 'taile you lose';
+    }
+    else { result = 'heads you win' }
+    console.log(result);
+   alert(`you guess taile: the computer gusss: ${result}`)
+  
+  
+  ">heads</button>
+
+  <script>//exercice 5a-5n 2:32:28
+    let coffee = 5;
+    let bagels = 3;
+    let soup = 9;
+    let cost = coffee + bagels * 2 + soup;
+    console.log(`cost of food : $${cost}`)//5a-5d
+    let tax = cost * 0.1;
+    console.log(`restorant cost $${tax}`)
+    let Variable = name;//5a
+    name = 'seid';
+    console.log(`My name is: ${name}`)
+    let totalcost = cost + tax;
+    console.log(`Total cost: $${totalcost}`);
+    //6a----6c
+    var hour = 14;
+    var name = 'seid';
+    if (hour >= 6 && hour <= 12) {
+      console.log(`GOOD MORNING ${name}`);
+    }
+    else if (hour >= 13 && hour <= 17) {
+      console.log(`GOOD AFTERNOON : ${name}`);
+    }
+    else { console.log(`GOOD NIGHT : ${name}`); }
+    //6d--de
+    var age = 69;
+    var holiday = true;
+    if ((age >= 6 && age <= 18 || age >= 65) && !holiday) {
+      console.log('discout');
+    }
+    else { console.log('no discount'); }
+
+    //6f----
+
+    let ranNum = Math.random();
+    let result = '';
+    if (ranNum <= 0.5) {
+      result = 'heads';
+    }
+    else { result = 'tails' }
+    console.log(result)
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
