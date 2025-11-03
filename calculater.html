@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <style>
     button {
@@ -8,20 +9,27 @@
       height: 40px;
       margin: 3px;
     }
-</style>
+  </style>
   <title>calculater</title>
 </head>
-<button onclick="calculation+=1;
-console.log(calculation)">1</button>
-<button onclick="calculation+=2;
-console.log(calculation)">2</button>
-<button onclick="calculation+=3;
-console.log(calculation)">3</button>
-<button onclick="calculation=' + '">+</button>
-<button  onclick="eval(calculation)">=</button>
+<button onclick="
+        calculation += '1';
+        console.log(calculation);
+      ">1</button>
+<button onclick="calculation += '2';
+console.log(calculation);
+">2</button>
+<button onclick="calculation+='3';
+console.log(calculation);">3</button>
+
+<button onclick="calculation += ' + ' ;">+</button>
+<button onclick="calculation = '' ;">C</button>
+<button onclick="calculation = eval(calculation);
+console.log(calculation);">=</button>
 <script>
   let calculation = '';
-  calculation=eval(calculation);
+  //calculation = eval(calculation);
 </script>
 </body>
+
 </html>

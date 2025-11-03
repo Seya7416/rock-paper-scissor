@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>exercice07</title>
+</head>
+
+<body>
+  <script>
+    function greet(name) {//7a--7c
+      if (!name) {
+        console.log('hi there!')
+        return;
+      }
+      console.log(`Hello ${name}`);
+
+
+    }
+    greet('seid');
+    greet('seid');
+    greet();
+    greet();
+    greet();
+    let fahrenheit = '';//7d
+    function convertToFahrenit(celsius) {
+      celsius = 25;
+      return fahrenheit = (celsius * 9 / 5) + 32;
+
+    }
+    console.log(convertToFahrenit(fahrenheit));
+    //4:15:25
+    let celsius;//7e
+    function convertToCelsius(fahrenheit) {
+      fahrenheit = 86;
+      return celsius = (fahrenheit - 32) * 5 / 9;
+    }
+    console.log(convertToCelsius(celsius));
+
+
+    function convertTemperature(degrees, unit) {//7f
+      if (unit == 'C') {
+        return celsius = (fahrenheit - 32) * 5 / 9;
+      }
+      else if (unit == 'F') {
+        return fahrenheit = (celsius * 9 / 5) + 32;
+
+      }
+
+    }
+    console.log(convertTemperature(25, 'C'));
+    console.log(convertTemperature(86, 'F'));
+
+    function convertLengeth(length, form, to) {
+      if (form == 'miles' && to == 'km') {
+        return km = length * 1.6 + ' ' + to;
+      }
+      else if (form == 'km' && to == 'km') {
+        return km = length * 1 + ' ' + to;
+      }
+      else if (form == 'feet' && to == 'km') {
+        return km = length / 3281 + ' ' + to;
+      }
+      else if (form == 'km' && to == 'miles') {
+        return miles = length / 1.6 + to;
+      }
+      else if (form == 'miles' && to == 'miles') {
+        return miles = length * 1 + ' ' + to;
+      }
+      else if (form == 'feet' && to == 'miles') {
+        return miles = length / 5280 + ' ' + to;
+      }
+      else if (form == 'km' && to == 'feet') {
+        return feet = length * 3281 + ' ' + to;
+
+
+      }
+      else if (form == 'miles' && to == 'feet') {
+        return feet = length * 5280 + ' ' + to;
+      }
+      else if (form == 'feet') {
+        return feet = length * 1 + ' ' + to;
+      }
+      else if ((form !== 'km' && form !== 'miles' && form !== 'feet') && (to !== 'km' && to !== 'miles' && to !== 'feet')) {
+        console.log("form : ", form, "to : ", to)
+        return ('invalid UNIT');
+      }
+
+
+    }
+    console.log(convertLengeth(50, 'miles', 'km'));
+    console.log(convertLengeth(32, 'km', 'miles'));
+    console.log(convertLengeth(50, 'km', 'km'));
+    console.log(convertLengeth(5, 'miles', 'km'));
+    console.log(convertLengeth(5, 'miles', 'feet'));
+    console.log(convertLengeth(5, 'km', 'feet'));
+    console.log(convertLengeth(5, 'lbs', 'lbs'));
+
+
+
+    /*function convertLength(length, from, to) {
+      if (from === 'km' && to === 'miles') {
+        return `${length / 1.6} ${to}`;
+
+      } else if (from === 'km' && to === 'ft') {
+        return `${length * 3281} ${to}`;
+
+      } else if (from === 'miles' && to === 'km') {
+        return `${length * 1.6} ${to}`;
+
+      } else if (from === 'miles' && to === 'ft') {
+        return `${length * 5280} ${to}`;
+
+      } else if (from === 'ft' && to === 'km') {
+        return `${length / 3281} ${to}`;
+
+      } else if (from === 'ft' && to === 'miles') {
+        return `${length / 5280} ${to}`;
+
+        // You can also do if (from === 'km' && to === 'km) {... }
+        // if (from === to) is a trick you can use to save some code.
+      } else if (from === to) {
+        return `${length} ${to}`;
+      }
+    }
+
+    console.log(convertLength(50, 'miles', 'km'));
+    console.log(convertLength(32, 'km', 'miles'));
+    console.log(convertLength(50, 'km', 'km'));
+
+    console.log(convertLength(5, 'miles', 'km'));
+    console.log(convertLength(5, 'miles', 'ft'));
+    console.log(convertLength(5, 'km', 'ft'));*/
+
+
+  </script>
+</body>
+
+</html>
