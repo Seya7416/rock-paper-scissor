@@ -6,7 +6,47 @@
 </head>
 
 <body>
+  <script>
+    //exercice-08A--08K
+    products = {//08A
+      product: 'basketball',
+      price: 2095,
+      ['delivery - time']: '3-days'//08c
+    };
+    products.price += 500;//08B
+    console.log(products);
+    console.log(products.product);
+    console.log(products.price);
 
+    product1 = {
+      name: 'sockes',
+      price: 2578
+    }
+    product2 = {
+      name: 'sockes',
+      price: 5643
+    }
+    if (product1.price >= product2.price) {
+      console.log('product1');
+    }
+    else {
+      console.log('product2')
+    }
+    function isSameProduct(product1, product2) {
+      if (product1.name === product2.name && product1.price === product2.price) {
+        return (true);
+      }
+      else {
+        return (false);
+      }
+
+    }
+    console.log(isSameProduct(product1, product2));
+
+    console.log('GOOD MORNING'.toLowerCase());
+    console.log('GOOD MORNING '.repeat(3))
+
+  </script>
 </body>
 
 </html>
